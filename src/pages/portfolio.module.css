@@ -1,0 +1,46 @@
+.section {
+  margin-bottom: 5rem;
+}
+
+.section-break {
+  page-break-before: always;
+}
+
+.introduction {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.block {
+  display: inline-block;
+  text-align: right;
+  vertical-align: top;
+}
+
+.pictures {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 0;
+  margin: 1rem 0 0;
+  list-style: none !important;
+}
+
+.picture {
+  width: 16rem;
+}
+
+.image {
+  max-width: 90%;
+}
+
+.description {
+  margin-top: 15px;
+}
+
+.description p {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}

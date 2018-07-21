@@ -1,0 +1,56 @@
+.media {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.link {
+  display: inline-block;
+  width: 92px;
+  margin: 10px;
+  opacity: 0.8;
+}
+
+.link:hover {
+  opacity: 1;
+}
+
+.skills {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 0;
+  margin: 1rem 0 0;
+  list-style: none;
+}
+
+.skill {
+  width: 7.433333333333334rem;
+}
+
+.skillInnerWrapper {
+  padding: 1rem;
+  text-align: center;
+}
+
+.iconWrapper {
+  display: flex;
+  width: 90%;
+  height: 5.166666666666667rem;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 0.3rem;
+}
+
+.icon {
+  max-width: 90%;
+  max-height: 4.3rem;
+}
+
+.skillTitle {
+  font-family: 'Indie Flower', cursive; /*var(--font-handwriting);*/
+  font-size: 18px !important;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 900;
+}

@@ -1,0 +1,117 @@
+.introduction {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.subtitle {
+  margin-top: -20px;
+  font-family: 'Indie Flower', cursive; /*var(--font-handwriting);*/
+  font-size: 22px;
+  font-style: italic;
+  vertical-align: top;
+}
+
+.block {
+  display: inline-block;
+  text-align: right;
+  vertical-align: top;
+}
+
+.link {
+  display: block;
+  text-align: right;
+}
+
+.pdfButton {
+  margin-left: 10px;
+}
+
+.description {
+  margin-top: -1rem;
+}
+
+.skills {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 0;
+  margin: 1rem 0 0;
+  list-style: none;
+}
+
+.skill {
+  width: 13rem;
+  margin-bottom: 1rem;
+}
+
+.skill p {
+  font-size: 14px;
+  line-height: 1rem;
+  text-align: justify;
+}
+
+.skillHeading {
+  margin-bottom: 0;
+}
+
+.card {
+  margin-bottom: 2rem;
+}
+
+.cardHeading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cardTitle {
+  margin-bottom: 0;
+}
+
+.cardTime {
+  font-style: italic;
+}
+
+.cardPosition {
+  margin-bottom: 0.8rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .introduction {
+    flex-direction: column;
+  }
+
+  .link {
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .introduction {
+    margin-bottom: 40px;
+  }
+
+  .pdfButton {
+    display: none;
+  }
+}
+
+@media only print {
+  .container {
+    display: grid;
+    grid-column-gap: 5%;
+    grid-template:
+      'main side' auto
+      / 70% 25%;
+  }
+
+  .side {
+    grid-area: side;
+  }
+
+  .main {
+    grid-area: main;
+  }
+}
