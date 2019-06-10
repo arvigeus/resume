@@ -84,7 +84,7 @@ const IndexPage = ({ data }) => (
           name=".Net Core"
           icon={require("../assets/images/dotNetCore.svg")}
         />
-        <Skill name="Redux" icon={"../assets/images/redux.svg"} />
+        <Skill name="Redux" icon={require("../assets/images/redux.svg")} />
         <Skill name="GraphQL" icon={require("../assets/images/graphql.svg")} />
         <Skill name="MobX" icon={require("../assets/images/mobx.svg")} />
         <Skill
