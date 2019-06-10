@@ -22,72 +22,11 @@ body {
   font-family: var(--font-handwriting);
 }
 
-.app {
-  position: relative; /* This is needed for the stacked paper effect to work */
-  z-index: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.paper {
-  position: relative;
-  width: 100%;
-  max-width: 1200px;
-  min-height: 300px;
-  box-sizing: border-box;
-  padding: 20px 40px;
-  margin: 20px;
-  font-size: 21px;
-}
-
-.paper,
-.paper::before,
-.paper::after {
-  border: 1px solid #bbb;
-  background-color: #eee;
-
-  /* Styles to distinguish sheets from one another */
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
-}
-
-.paper::before,
-.paper::after {
-  position: absolute;
-  width: 99%;
-  height: 99%;
-  max-height: 1120px;
-  content: '';
-}
-
-.paper::before {
-  z-index: -1;
-  top: 0;
-  right: 15px;
-  transform: rotate(-1deg);
-}
-
-.paper::after {
-  z-index: -2;
-  top: 5px;
-  right: -5px;
-  transform: rotate(1deg);
-}
-
 @media only screen and (max-width: 1200px) {
   html,
   body {
     padding: 0;
     background: #eee;
-  }
-
-  .paper,
-  .paper::before,
-  .paper::after {
-    border: none;
-    background: transparent;
-    box-shadow: none;
   }
 }
 
@@ -96,23 +35,5 @@ body {
   body {
     padding: 0;
     background: transparent;
-  }
-
-  .no-print {
-    display: none;
-  }
-
-  a:not(.no-print-info)::after {
-    content: ' (' attr(href) ') ';
-    font-size: 0.8em;
-    font-weight: normal;
-  }
-
-  .paper,
-  .paper::before,
-  .paper::after {
-    border: none;
-    background: transparent;
-    box-shadow: none;
   }
 }

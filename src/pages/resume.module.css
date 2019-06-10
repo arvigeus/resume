@@ -7,7 +7,7 @@
 
 .subtitle {
   margin-top: -20px;
-  font-family: 'Indie Flower', cursive; /*var(--font-handwriting);*/
+  font-family: "Indie Flower", cursive; /* var(--font-handwriting); */
   font-size: 22px;
   font-style: italic;
   vertical-align: top;
@@ -22,10 +22,6 @@
 .link {
   display: block;
   text-align: right;
-}
-
-.pdfButton {
-  margin-left: 10px;
 }
 
 .description {
@@ -88,6 +84,15 @@
   }
 }
 
+.pdfButton {
+  border: none;
+}
+
+.pdfButton:hover,
+.pdfButton:focus {
+  background: none;
+}
+
 @media only screen and (max-width: 480px) {
   .introduction {
     margin-bottom: 40px;
@@ -103,7 +108,7 @@
     display: grid;
     grid-column-gap: 5%;
     grid-template:
-      'main side' auto
+      "main side" auto
       / 70% 25%;
   }
 

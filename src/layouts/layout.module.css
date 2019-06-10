@@ -1,0 +1,201 @@
+.app {
+  position: relative; /* This is needed for the stacked paper effect to work */
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.paper {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 300px;
+  box-sizing: border-box;
+  padding: 20px 40px;
+  margin: 20px;
+  font-size: 21px;
+}
+
+.paper,
+.paper::before,
+.paper::after {
+  border: 1px solid #bbb;
+  background-color: #eee;
+
+  /* Styles to distinguish sheets from one another */
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.paper::before,
+.paper::after {
+  position: absolute;
+  width: 99%;
+  height: 99%;
+  max-height: 1120px;
+  content: "";
+}
+
+.paper::before {
+  z-index: -1;
+  top: 0;
+  right: 15px;
+  transform: rotate(-1deg);
+}
+
+.paper::after {
+  z-index: -2;
+  top: 5px;
+  right: -5px;
+  transform: rotate(1deg);
+}
+
+@media only screen and (max-width: 1200px) {
+  .paper,
+  .paper::before,
+  .paper::after {
+    border: none;
+    background: transparent;
+    box-shadow: none;
+  }
+}
+
+@media only print {
+  .noPrint {
+    display: none;
+  }
+
+  a:not(.noPrintInfo)::after {
+    content: " (" attr(href) ") ";
+    font-size: 0.8em;
+    font-weight: normal;
+  }
+
+  .paper,
+  .paper::before,
+  .paper::after {
+    border: none;
+    background: transparent;
+    box-shadow: none;
+  }
+}
+
+.container {
+  display: grid;
+  grid-column-gap: 45px;
+  grid-template:
+    "picture content" 260px
+    "navigation content" auto
+    / 200px auto;
+}
+
+.profilePicture {
+  width: 200px;
+  grid-area: picture;
+}
+
+.navigation {
+  grid-area: navigation;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .navButton {
+    display: block !important;
+    width: 100%;
+    max-width: 165px;
+    box-sizing: border-box;
+    align-self: center;
+    padding: 16px;
+    border: solid 2px #444; /* var(--input-color); */
+    margin: 5px 10px;
+    background: transparent;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    color: #444; /* var(--input-color); */
+    font-family: "Kurale", sans-serif; /* var(--font-interface); */
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+    text-decoration: none;
+    transition: none;
+  }
+}
+
+.navButton {
+  display: block !important;
+  width: 100%;
+  max-width: 165px;
+  box-sizing: border-box;
+  align-self: center;
+  padding: 16px;
+  border: solid 2px #444; /* var(--input-color); */
+  margin: 5px 10px;
+  background: transparent;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  color: #444; /* var(--input-color); */
+  font-family: "Kurale", sans-serif; /* var(--font-interface); */
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color ease 0.3s;
+}
+
+.navButton:focus {
+  border-color: #bbb;
+  background-color: #bbb;
+}
+
+.navButton:hover {
+  border-color: #666;
+  background-color: #666;
+  color: var(--input-active-color) !important;
+  cursor: pointer;
+}
+
+.content {
+  grid-area: content;
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    grid-template:
+      "picture navigation" 260px
+      "content content" auto
+      / 200px auto;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    grid-template:
+      "picture" auto
+      "navigation" auto
+      "content" auto
+      / 100%;
+  }
+
+  .profilePicture {
+    justify-self: center;
+  }
+
+  .navigation,
+  .content {
+    margin-top: 30px;
+  }
+}
+
+@media print {
+  .container {
+    grid-template:
+      "content" 100%
+      / 100%;
+  }
+
+  .navigation,
+  .profilePicture {
+    display: none;
+  }
+}
