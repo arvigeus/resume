@@ -137,7 +137,7 @@ const Portfolio: React.FC = ({ data }) => (
         />
         <Picture
           name="Tâm Spa"
-          src={require("../assets/portfolio/OSS/tamspa4.png")}
+          src={require("../assets/portfolio/OSS/tamspa/tamspa4.png")}
         />
       </ul>
     </section>
