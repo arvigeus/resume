@@ -29,6 +29,7 @@ const Portfolio: React.FC = ({ data }) => (
 
     <section className={styles.section}>
       <h3>Personal and open source</h3>
+
       <Source name="The Snap" url="https://the-snap.now.sh/" />
       <Source name="Source" url="https://github.com/arvigeus/the-snap" />
       <div className={styles.description}>
@@ -41,19 +42,21 @@ const Portfolio: React.FC = ({ data }) => (
       <ul className={styles.pictures}>
         <Picture
           name="The Snap"
-          src={require("../assets/portfolio/OSS/the-snap1.png")}
+          src={require("../assets/portfolio/OSS/the-snap/the-snap1.png")}
         />
         <Picture
           name="The Snap"
-          src={require("../assets/portfolio/OSS/the-snap2.png")}
+          src={require("../assets/portfolio/OSS/the-snap/the-snap2.png")}
         />
         <Picture
           name="The Snap"
-          src={require("../assets/portfolio/OSS/the-snap3.png")}
+          src={require("../assets/portfolio/OSS/the-snap/the-snap3.png")}
         />
       </ul>
 
+      <br />
       <hr />
+      <br />
 
       <Source name="react-doodle" url="https://friendie.netlify.com/" />
       <Source name="Source" url="https://github.com/arvigeus/friendie" />
@@ -66,31 +69,33 @@ const Portfolio: React.FC = ({ data }) => (
       <ul className={styles.pictures}>
         <Picture
           name="react-doodle"
-          src={require("../assets/portfolio/OSS/doodle1.png")}
+          src={require("../assets/portfolio/OSS/react-doodle/doodle1.png")}
         />
         <Picture
           name="react-doodle"
-          src={require("../assets/portfolio/OSS/doodle2.png")}
+          src={require("../assets/portfolio/OSS/react-doodle/doodle2.png")}
         />
         <Picture
           name="react-doodle"
-          src={require("../assets/portfolio/OSS/doodle3.png")}
+          src={require("../assets/portfolio/OSS/react-doodle/doodle3.png")}
         />
         <Picture
           name="react-doodle"
-          src={require("../assets/portfolio/OSS/doodle4.png")}
+          src={require("../assets/portfolio/OSS/react-doodle/doodle4.png")}
         />
         <Picture
           name="react-doodle"
-          src={require("../assets/portfolio/OSS/doodle5.png")}
+          src={require("../assets/portfolio/OSS/react-doodle/doodle5.png")}
         />
         <Picture
           name="react-doodle"
-          src={require("../assets/portfolio/OSS/doodle6.png")}
+          src={require("../assets/portfolio/OSS/react-doodle/doodle6.png")}
         />
       </ul>
 
+      <br />
       <hr />
+      <br />
 
       <Source
         name="eslint-config-react-friendly"
@@ -106,6 +111,35 @@ const Portfolio: React.FC = ({ data }) => (
           the way
         </p>
       </div>
+
+      <br />
+      <hr />
+      <br />
+
+      <Source name="Tâm Spa" url="https://tamspa.net/" />
+      <Source name="Source" url="https://github.com/arvigeus/thanh-ha-spa" />
+      <div className={styles.description}>
+        <p>WIP</p>
+        <p>E-commerce shop for a spa center.</p>
+      </div>
+      <ul className={styles.pictures}>
+        <Picture
+          name="Tâm Spa"
+          src={require("../assets/portfolio/OSS/tamspa/tamspa1.png")}
+        />
+        <Picture
+          name="Tâm Spa"
+          src={require("../assets/portfolio/OSS/tamspa/tamspa2.png")}
+        />
+        <Picture
+          name="Tâm Spa"
+          src={require("../assets/portfolio/OSS/tamspa/tamspa3.png")}
+        />
+        <Picture
+          name="Tâm Spa"
+          src={require("../assets/portfolio/OSS/tamspa4.png")}
+        />
+      </ul>
     </section>
 
     <section className={styles.section}>
@@ -195,10 +229,22 @@ const Portfolio: React.FC = ({ data }) => (
       </div>
       <Source name="Github" url="https://github.com/arvigeus/didique-client" />
       <ul className={styles.pictures}>
-        <Picture name="DDQ" src={require("../assets/portfolio/ddq/ddq1.jpg")} />
-        <Picture name="DDQ" src={require("../assets/portfolio/ddq/ddq2.jpg")} />
-        <Picture name="DDQ" src={require("../assets/portfolio/ddq/ddq3.jpg")} />
-        <Picture name="DDQ" src={require("../assets/portfolio/ddq/ddq4.jpg")} />
+        <Picture
+          name="DDQ"
+          src={require("../assets/portfolio/OSS/ddq/ddq1.jpg")}
+        />
+        <Picture
+          name="DDQ"
+          src={require("../assets/portfolio/OSS/ddq/ddq2.jpg")}
+        />
+        <Picture
+          name="DDQ"
+          src={require("../assets/portfolio/OSS/ddq/ddq3.jpg")}
+        />
+        <Picture
+          name="DDQ"
+          src={require("../assets/portfolio/OSS/ddq/ddq4.jpg")}
+        />
       </ul>
     </section>
 
@@ -222,11 +268,11 @@ const Portfolio: React.FC = ({ data }) => (
       <ul className={styles.pictures}>
         <Picture
           name="4 Spiritual Principles"
-          src={require("../assets/portfolio/4principles/4sp1.jpg")}
+          src={require("../assets/portfolio/OSS/4principles/4sp1.jpg")}
         />
         <Picture
           name="4 Spiritual Principles"
-          src={require("../assets/portfolio/4principles/4sp2.jpg")}
+          src={require("../assets/portfolio/OSS/4principles/4sp2.jpg")}
         />
       </ul>
     </section>
@@ -262,7 +308,7 @@ const Portfolio: React.FC = ({ data }) => (
       <ul className={styles.pictures}>
         <Picture
           name="Student Life"
-          src={require("../assets/portfolio/StudentLife/sl1.jpg")}
+          src={require("../assets/portfolio/OSS/StudentLife/sl1.jpg")}
         />
       </ul>
     </section>
