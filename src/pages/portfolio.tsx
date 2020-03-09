@@ -111,35 +111,6 @@ const Portfolio: React.FC = ({ data }) => (
           the way
         </p>
       </div>
-
-      <br />
-      <hr />
-      <br />
-
-      <Source name="Tâm Spa" url="https://tamspa.net/" />
-      <Source name="Source" url="https://github.com/arvigeus/thanh-ha-spa" />
-      <div className={styles.description}>
-        <p>WIP</p>
-        <p>E-commerce shop for a spa center.</p>
-      </div>
-      <ul className={styles.pictures}>
-        <Picture
-          name="Tâm Spa"
-          src={require("../assets/portfolio/OSS/tamspa/tamspa1.png")}
-        />
-        <Picture
-          name="Tâm Spa"
-          src={require("../assets/portfolio/OSS/tamspa/tamspa2.png")}
-        />
-        <Picture
-          name="Tâm Spa"
-          src={require("../assets/portfolio/OSS/tamspa/tamspa3.png")}
-        />
-        <Picture
-          name="Tâm Spa"
-          src={require("../assets/portfolio/OSS/tamspa/tamspa4.png")}
-        />
-      </ul>
     </section>
 
     <section className={styles.section}>
@@ -273,24 +244,6 @@ const Portfolio: React.FC = ({ data }) => (
         <Picture
           name="4 Spiritual Principles"
           src={require("../assets/portfolio/OSS/4principles/4sp2.jpg")}
-        />
-      </ul>
-    </section>
-
-    <section className={`${styles.section} ${styles.sectionBreak}`}>
-      <h3>Shopmetrics</h3>
-      <Source name="Page" url="https://shopmetrics.com/" />
-      <div className={styles.description}>
-        <p>
-          Everything I do for this company is private and closed source,
-          available only for paying customers. Most of my work is focused on
-          backend services, but I do have few frontend projects (private).
-        </p>
-      </div>
-      <ul className={styles.pictures}>
-        <Picture
-          name="Shopmetrics"
-          src={require("../assets/portfolio/Shopmetrics/sm1.jpg")}
         />
       </ul>
     </section>
